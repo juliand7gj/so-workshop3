@@ -75,7 +75,11 @@ Las llamadas al sistema encargadas de enviar y recibir datos a través de la red
 
 * sendto(int sockfd, const void buf, size_t len, int flags, const struct sockaddr dest_addr, socklen_t addrlen): se utiliza para transmitir un mensaje a otro socket. El argumento sockfd es el descriptor de archivo del socket de envío. El argumento flags es el OR bit a bit de cero o más de los siguientes indicadores. 
 
+![][8] 
+
 * recvfrom(int sockfd, void buf, size_t len, int flags, struct sockaddr src_addr, socklen_t addrlen): se utiliza para recibir mensajes desde un socket. Puede utilizarse para recibir datos en sockets sin conexión y orientados a la conexión. Coloca el mensaje recibido en el buffer buf. El llamador debe especificar el tamaño del búfer en len. Si src_addr no es NULL y el protocolo subyacente proporciona la dirección de origen del mensaje, esa dirección de origen se coloca en el búfer señalado por src_addr. En este caso, addrlen es un argumento de valor-resultado. Antes de la llamada, se debe inicializar al tamaño del búfer asociado con src_addr. Al volver, addrlen se actualiza para contener el tamaño real de la dirección de origen. La dirección devuelta se trunca si el búfer suministrado es demasiado pequeño; en este caso, addrlen devolverá un valor mayor que el proporcionado a la llamada. Si la persona que llama no está interesada en la dirección de origen, src_addr y addrlen deben especificarse como NULL.
+
+![][9] 
 
 ### Nota
 
@@ -94,3 +98,5 @@ El informe debe ser entregado en formato README.md y debe ser subido a un reposi
 [5]: 5.png
 [6]: 6.png
 [7]: 7.png
+[8]: 8.png
+[9]: 9.png
