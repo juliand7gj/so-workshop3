@@ -19,6 +19,7 @@
 
 ### Descripción
 
+En este taller se va a trabajar y a entender las llamadas al sistema para algunos comandos de linux. 
 
 ### Actividades 
 
